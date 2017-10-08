@@ -1,0 +1,987 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="main.js"></script>
+
+  <!--
+  <script src="question1/solution1.js"></script>
+  <script src="question1/solution2.js"></script>
+  <script src="question1/solution3.js"></script>
+  <script src="question1/solution4.js"></script>
+  <script src="question1/solution5.js"></script>
+  <script src="question1/solution6.js"></script>
+  !-->
+
+  <script>
+  $( function() {
+    $('.accordion_wrapper').accordion({collapsible : true, active : 'none'});
+    $( ".tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+
+<style>
+.tabs{
+  height: auto !important;
+}
+.question{
+  height: auto !important;
+}
+.good{
+  color:green;
+  font-weight: bold;
+}
+.bad{
+  color:red;
+  font-weight: bold;
+}
+.commenting{
+  color:blue;
+}
+.syntax_conventions{
+  color:purple;
+}
+.efficiency{
+  color:pink;
+}
+.example_use{
+  color:#4ec6d2;
+}
+
+.inner div{
+margin-bottom: 10px;
+}
+
+.ui-tabs .ui-tabs-panel{
+  overflow: auto;
+}
+.row{
+  margin: 0 0 0 0;
+}
+.main_wrapper{
+  margin: 20px auto;
+}
+</style>
+<div class="container main_wrapper">
+  <div class="accordion_wrapper">
+
+  <h3 class="title">
+      Question 1 - Review these translations
+  </h3>
+
+  <div class="question 1">
+
+    <div class="tabs 1">
+      <p>
+
+        <div class="row">
+        Below we mark the solutions for the highest product of three numbers in an array.
+        We mark it based on the following critera:
+        </div>
+
+        <strong class="row commenting">Code Clarity</strong>
+        <strong class="row syntax_conventions">Syntax Conventions</strong>
+        <strong class="row efficiency">Efficiency</strong>
+        <strong class="row example_use">Provides an example use of the function</strong>
+
+      </p>
+      <ul>
+        <li><a href="#solution-1">Solution 1</a></li>
+        <li><a href="#solution-2">Solution 2</a></li>
+        <li><a href="#solution-3">Solution 3</a></li>
+        <li><a href="#solution-4">Solution 4</a></li>
+        <li><a href="#solution-5">Solution 5</a></li>
+        <li><a href="#solution-6">Solution 6</a></li>
+
+      </ul>
+      <script>
+
+      </script>
+
+      <!-- Solution 1 -->
+      <div id="solution-1">
+        <h2 class="subtitle">
+          Explanation for solution 1:
+
+        </h2>
+        <div class="col-md-8 code">
+
+        </div>
+        <div class="col-md-4 explanation">
+          <p>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="commenting" style="margin-top:5px;">
+                  Code Clarity
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The logic for the lines within the function are clearly commented</div>
+                <div class="bad">The "highestProductOf3" function is not documented. We should be told what the function return's as well as a description of the parameters we pass to the funciton. </div>
+              </div>
+            </div>
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="syntax_conventions" style="margin-top:5px;">
+                  Syntax Conventions
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad"> "let" is not used to identify the variables within a code block, for example the for loop</div>
+                <div class="good"> camelCase is used to define variables & functions</div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="efficiency" style="margin-top:5px;">
+                  Efficiency
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The code only uses a single loop to find the highest product of three</div>
+                <div class="bad">There is no need to store the lowest product of two, or lowest value; since we
+                  are simply looking for the highest product of three, which doesn't require that we have
+                  lowest product of two.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="example_use" style="margin-top:5px;">
+                  Provides an example use of the function
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad">There is no example of how the function is implemented.
+                </div>
+              </div>
+            </div>
+
+
+            <h1 class="mark">
+              1.5/4
+            </h1>
+
+          </p>
+        </div>
+        <script>
+          let solution1 = window.fileReader('question1/solution1.js');
+          solution1.onreadystatechange = function() {
+            if(typeof(solution1.responseText) !== 'undefined'){
+                document.getElementById('solution-1').querySelector('.code').innerHTML = '<pre>' + solution1.responseText + '</pre>';
+            }
+          }
+
+        </script>
+      </div>
+
+
+
+
+      <!-- Solution 2 -->
+      <div id="solution-2">
+        <h2 class="subtitle">
+          Explanation for solution 2:
+
+        </h2>
+        <div class="col-md-8 code">
+
+        </div>
+        <div class="col-md-4 explanation">
+          <p>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="commenting" style="margin-top:5px;">
+                  Code Clarity
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The logic for the lines within the function are clearly and well described</div>
+                <div class="bad">The "highestProductOf3" function is not documented. We should be told what the function return's as well as a description of the parameters we pass to the funciton. </div>
+              </div>
+            </div>
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="syntax_conventions" style="margin-top:5px;">
+                  Syntax Conventions
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (1/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good"> "let" is used to identify the variables within a code block, for example the for loop</div>
+                <div class="good"> camelCase is used to define variables & functions</div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="efficiency" style="margin-top:5px;">
+                  Efficiency
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The code only uses a single loop to find the highest product of three</div>
+                <div class="bad">There is no need to store the lowest product of two, or lowest value; since we
+                  are simply looking for the highest product of three, which doesn't require that we have
+                  lowest product of two.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="example_use" style="margin-top:5px;">
+                  Provides an example use of the function
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad">There is no example of how the function is implemented.
+                </div>
+              </div>
+            </div>
+
+
+            <h1 class="mark">
+              2/4
+            </h1>
+
+          </p>
+        </div>
+        <script>
+          let solution2 = window.fileReader('question1/solution2.js');
+          solution2.onreadystatechange = function() {
+            if(typeof(solution2.responseText) !== 'undefined'){
+                document.getElementById('solution-2').querySelector('.code').innerHTML = '<pre>' + solution2.responseText + '</pre>';
+            }
+          }
+
+        </script>
+      </div>
+
+
+
+      <!-- Solution 3 -->
+      <div id="solution-3">
+        <h2 class="subtitle">
+          Explanation for solution 3:
+
+        </h2>
+        <div class="col-md-8 code">
+
+        </div>
+        <div class="col-md-4 explanation">
+          <p>
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="commenting" style="margin-top:5px;">
+                  Code Clarity
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.25/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The logic for the lines within the function are clearly and well described</div>
+                <div class="bad">The "highestProductOf3" function is not documented. We should be told what the function return's as well as a description of the parameters we pass to the funciton. </div>
+                <div class="bad">The nested Math.min & Math.max calls are hard to understand. They should be broken up</div>
+
+              </div>
+            </div>
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="syntax_conventions" style="margin-top:5px;">
+                  Syntax Conventions
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad"> "let" not is used to identify the variables within a code block, for example the for loop</div>
+                <div class="good"> camelCase is used to define variables & functions</div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="efficiency" style="margin-top:5px;">
+                  Efficiency
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The code only uses a single loop to find the highest product of three</div>
+                <div class="bad">There is no need to store the lowest product of two, or lowest value; since we
+                  are simply looking for the highest product of three, which doesn't require that we have
+                  lowest product of two.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="example_use" style="margin-top:5px;">
+                  Provides an example use of the function
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad">There is no example of how the function is implemented.
+                </div>
+              </div>
+            </div>
+
+
+            <h1 class="mark">
+              1.25/4
+            </h1>
+
+          </p>
+        </div>
+        <script>
+          let solution3 = window.fileReader('question1/solution3.js');
+          solution3.onreadystatechange = function() {
+            if(typeof(solution3.responseText) !== 'undefined'){
+                document.getElementById('solution-3').querySelector('.code').innerHTML = '<pre>' + solution3.responseText + '</pre>';
+            }
+          }
+
+        </script>
+      </div>
+
+
+
+
+
+
+
+      <!-- Solution 4 -->
+      <div id="solution-4">
+        <h2 class="subtitle">
+          Explanation for solution 4:
+
+        </h2>
+        <div class="col-md-8 code">
+
+        </div>
+        <div class="col-md-4 explanation">
+          <p>
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="commenting" style="margin-top:5px;">
+                  Code Clarity
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (1/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The logic for the lines within the function are clearly and well described</div>
+                <div class="good">The "highestProductOf3" is well documented</div>
+
+              </div>
+            </div>
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="syntax_conventions" style="margin-top:5px;">
+                  Syntax Conventions
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad"> "let" not is used to identify the variables within a code block, for example the for loop</div>
+                <div class="good"> camelCase is used to define variables & functions</div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="efficiency" style="margin-top:5px;">
+                  Efficiency
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The code only uses a single loop to find the highest product of three</div>
+                <div class="bad">There is no need to store the lowest product of two, or lowest value; since we
+                  are simply looking for the highest product of three, which doesn't require that we have
+                  lowest product of two.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="example_use" style="margin-top:5px;">
+                  Provides an example use of the function
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad">There is no example of how the function is implemented.
+                </div>
+              </div>
+            </div>
+
+
+            <h1 class="mark">
+              2/4
+            </h1>
+
+          </p>
+        </div>
+        <script>
+          let solution4 = window.fileReader('question1/solution4.js');
+          solution4.onreadystatechange = function() {
+            if(typeof(solution4.responseText) !== 'undefined'){
+                document.getElementById('solution-4').querySelector('.code').innerHTML = '<pre>' + solution4.responseText + '</pre>';
+            }
+          }
+
+        </script>
+      </div>
+
+
+
+
+
+
+      <!-- Solution 5 -->
+      <div id="solution-5">
+        <h2 class="subtitle">
+          Explanation for solution 5:
+
+        </h2>
+        <div class="col-md-8 code">
+
+        </div>
+        <div class="col-md-4 explanation">
+          <p>
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="commenting" style="margin-top:5px;">
+                  Code Clarity
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The logic for the lines within the function are clearly and well described</div>
+                <div class="bad">The "highestProductOf3" function is not documented. We should be told what the function return's as well as a description of the parameters we pass to the funciton. </div>
+
+              </div>
+            </div>
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="syntax_conventions" style="margin-top:5px;">
+                  Syntax Conventions
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad"> "let" not is used to identify the variables within a code block, for example the for loop</div>
+                <div class="good"> camelCase is used to define variables & functions</div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="efficiency" style="margin-top:5px;">
+                  Efficiency
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.75/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The code only uses a single loop to find the highest product of three</div>
+                <div class="good">The Math.min & Math.max functions are locally defined within the scope of the function</div>
+                <div class="bad">There is no need to store the lowest product of two, or lowest value; since we
+                  are simply looking for the highest product of three, which doesn't require that we have
+                  lowest product of two.
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="example_use" style="margin-top:5px;">
+                  Provides an example use of the function
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="bad">There is no example of how the function is implemented.
+                </div>
+              </div>
+            </div>
+
+
+            <h1 class="mark">
+              1.75/4
+            </h1>
+
+          </p>
+        </div>
+        <script>
+          let solution5 = window.fileReader('question1/solution5.js');
+          solution5.onreadystatechange = function() {
+            if(typeof(solution5.responseText) !== 'undefined'){
+                document.getElementById('solution-5').querySelector('.code').innerHTML = '<pre>' + solution5.responseText + '</pre>';
+            }
+          }
+
+        </script>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- Solution 5 -->
+      <div id="solution-6">
+        <h2 class="subtitle">
+          Explanation for solution 6:
+
+        </h2>
+        <div class="col-md-8 code">
+
+        </div>
+        <div class="col-md-4 explanation">
+          <p>
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="commenting" style="margin-top:5px;">
+                  Code Clarity
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (1/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The logic for the lines within the function are clearly and well described</div>
+                <div class="good">The "highestProductOf3" function is well documented</div>
+
+              </div>
+            </div>
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="syntax_conventions" style="margin-top:5px;">
+                  Syntax Conventions
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (1/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good"> The variables are well scoped. They are defined outside the loop with "var", and accessed inside the for loop block</div>
+                <div class="good"> camelCase is used to define variables & functions</div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="efficiency" style="margin-top:5px;">
+                  Efficiency
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (0.5/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">The code only uses a single loop to find the highest product of three</div>
+                <div class="bad">There is no need to store the lowest product of two, or lowest value; since we
+                  are simply looking for the highest product of three, which doesn't require that we have
+                  lowest product of two.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="section_score">
+
+              <div class="top" style="display:flex;">
+                <h3 class="example_use" style="margin-top:5px;">
+                  Provides an example use of the function
+                </h3>
+
+                <h4 class="score" style="text-align:right;flex:1">
+                  <strong>
+                  (1/1)
+                </strong>
+                </h4>
+              </div>
+
+
+              <div class="inner">
+                <div class="good">There is a perfect example use of the function with try catch statements, incase the function throws an error.
+                </div>
+              </div>
+            </div>
+
+
+            <h1 class="mark">
+              3.5/4
+            </h1>
+
+          </p>
+        </div>
+        <script>
+          let solution6 = window.fileReader('question1/solution6.js');
+          solution6.onreadystatechange = function() {
+            if(typeof(solution5.responseText) !== 'undefined'){
+                document.getElementById('solution-6').querySelector('.code').innerHTML = '<pre>' + solution6.responseText + '</pre>';
+            }
+          }
+
+        </script>
+      </div>
+
+
+    </div>
+  </div> <!-- question 1 wrapper end-->
+
+
+  <h3 class="title">
+    Read & review content
+  </h3>
+  <div class="question 2">
+
+
+    <div class="tabs 1">
+      <p>
+
+        <div class="row">
+
+        </div>
+
+      </p>
+      <ul>
+        <li><a href="#stock-price">Stock Price</a></li>
+        <li><a href="#product-of-other-numbers">Product of other numbers</a></li>
+        <li><a href="#garbage-collection">Garbage Collection</a></li>
+
+      </ul>
+
+      <div id = "stock-price">
+
+        <p>
+
+          The explanation is very good overall, as it highlights both the worst &
+          best case scenario cases.
+
+        </p>
+
+
+      </div>
+
+      <div id = "product-of-other-numbers">
+        <p>
+
+          The explanation is very good overall, as it highlights both the worst &
+          best case scenario cases.
+
+        </p>
+      </div>
+
+      <div id = "garbage-collection">
+        I would expand on this further and describe the disadvantages and
+        advtanges of garbage collecting.
+
+
+        <style>
+        .pros_cons{
+          margin: 10px 0;
+
+        }
+
+        .pros_cons, .pros_cons th, .pros_cons td {
+            border: 1px solid black;
+        }
+        </style>
+
+        <table class="pros_cons">
+
+          <th>Pros</th>
+          <th>Cons</th>
+
+          <tr>
+            <td>
+               Never have bugs related to dangling references/pointers
+            </td>
+            <td>
+               Takes a lot of system resources - (Garbage Collection progams are often slower than normal programs)
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+               Don't have to worry about memory leaks
+            </td>
+            <td>
+               Consume the amount of RAM that you give them
+            </td>
+          </tr>
+
+        </table>
+
+
+      </div>
+
+    </div>
+
+  </div> <!-- question 2 wrapper end-->
+
+  <h3 class="title">
+    Do you know big O notation?
+  </h3>
+  <div class="question 3">
+    <p>
+      Yes, I'm very comfortable with Big O Notation.
+      I read through the examples on your website &
+      I've understood them clearly & concisely.
+    </p>
+  </div> <!-- question 3 wrapper end-->
+
+  <h3 class="title">
+    What do you recommend we do with our content in terms of ES6?
+  </h3>
+
+  <div class="question 4">
+
+     <p>
+       I think there should be more emphasis on ES6,
+       for anyone learning Javascript. As it is really
+       becoming the standard for modern Javascript, I think that
+       there is no reason why new developers shouldn't learn it.
+
+      On Interview cake, perhaps all the sample code shown could
+      have examples in both ES6 and "normal" javascript.
+
+     </p>
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+</body>
+</html>
